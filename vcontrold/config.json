@@ -1,0 +1,23 @@
+{
+  "name": "vcontrold",
+  "version": "0.1.0",
+  "slug": "vcontrold",
+  "description": "Vcontrold Daemon for control and logging of Viessmann® type heating devices",
+  "url": "https://github.com/openv/vcontrold",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "services",
+  "boot": "auto",
+  "options": {
+    "device": null
+  },
+  "schema": {
+    "device": "device",
+    "vito_xml": "str?",
+    "vcontrold_xml": "str?"
+  },
+  "ports": {
+    "3002/tcp": 3002
+  },
+  "usb": true,
+  "uart": true
+}

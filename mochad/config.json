@@ -1,0 +1,22 @@
+{
+  "name": "Mochad",
+  "version": "0.1.2",
+  "slug": "mochad",
+  "description": "Mochad for X10 devices",
+  "url": "https://github.com/bjonica/mochad",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "services",
+  "boot": "auto",
+  "options": {
+    "device": null
+  },
+  "schema": {
+	"device": "device"
+  },
+  "ports": {
+    "1099/tcp": 1099
+  },
+  "usb": true,
+  "uart": true,
+  "udev": true
+}
